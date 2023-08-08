@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  go-auto-reload-local:
+    build:
+      context: .
+      dockerfile: local.Dockerfile
+    image: go-auto-reload:local
+    container_name: go-auto-reload-local
+    ports:
+      - 80:80
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      DBMS: 
+      DB_USER: 
+      DB_PASSWORD: 
+      DB_HOST: 
+      DB_PORT: 
+      DB_NAME: 
+      DB_MAX_OPEN_CONNECTION: 10
+      DB_MAX_IDLE_CONNECTION: 5
+      DB_MAX_CONNECTION_LIFETIME: 300s
+      MINIO_ENDPOINT: 
+      MINIO_ACCESSKEYID: 
+      MINIO_SECRETACCESSKEY: 
+      MINIO_SSL: 
+      MINIO_BUCKETNAME: 
+      MINIO_LOCATION: 
+      MINIO_CONN_TIMEOUT: 
+      MINIO_EXPIRATION_SECOND: 
+      RESPONSE_TIMEOUT_MS:  
+      PORT: 
+    volumes:
+      - .:/app
