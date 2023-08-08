@@ -9,26 +9,26 @@ type Response struct {
 }
 
 type ExampleResponse interface {
-	ResponseFindAll(ex []entity.Example) []Response
-	ResponseFindById(ex *entity.Example) *Response
-	ResponseFindCode(ex *entity.Example) *Response
-	ResponseFindByUuid(ex *entity.Example) *Response
+	ResponseFindAll(example []entity.Example) []Response
+	ResponseFindById(example *entity.Example) *Response
+	ResponseFindCode(example *entity.Example) *Response
+	ResponseFindByUuid(example *entity.Example) *Response
 }
 
 type ExampleResponseImpl struct{}
 
-func (r *ExampleResponseImpl) ResponseFindAll(ex []entity.Example) []Response {
+func (r *ExampleResponseImpl) ResponseFindAll(example []entity.Example) []Response {
 	panic("Not implement")
 }
 
-func (r *ExampleResponseImpl) ResponseFindById(ex *entity.Example) *Response {
+func (r *ExampleResponseImpl) ResponseFindById(example *entity.Example) *Response {
 	panic("Not implement")
 }
 
-func (r *ExampleResponseImpl) ResponseFindCode(ex *entity.Example) *Response {
+func (r *ExampleResponseImpl) ResponseFindCode(example *entity.Example) *Response {
 	panic("Not implement")
 }
 
-func (r *ExampleResponseImpl) ResponseFindByUuid(ex *entity.Example) *Response {
+func (r *ExampleResponseImpl) ResponseFindByUuid(example *entity.Example) *Response {
 	panic("Not implement")
 }
