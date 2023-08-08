@@ -30,10 +30,6 @@ type ExampleRequest interface {
 
 type ExampleRequestImpl struct{}
 
-func NewExampleRequest() ExampleRequest {
-	return &ExampleRequestImpl{}
-}
-
 func (request *ExampleRequestImpl) GetCreateRequestPayload(c *gin.Context) (*ExampleCreateRequest, error) {
 	exampleCreateRequest := &ExampleCreateRequest{}
 	err := c.Bind(exampleCreateRequest)
@@ -59,4 +55,8 @@ func (request *ExampleRequestImpl) GetUpdateRequestPayload(c *gin.Context) (*Exa
 		log.Fatal(err.Error())
 	}
 	return exampleUpdateRequest, nil
+}
+
+func NewExampleRequest() ExampleRequest {
+	return &ExampleRequestImpl{}
 }
