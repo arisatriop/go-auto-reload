@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/arisatriop/go-auto-reload/config"
 	"github.com/arisatriop/go-auto-reload/routes"
 	"github.com/gin-gonic/gin"
 )
@@ -11,8 +12,7 @@ import (
 func main() {
 
 	// Capture database connection
-	// config.CreateDBConnection()
-	// fmt.Println("Connected to database")
+	config.CreateDBConnection()
 
 	// Run server
 	router := gin.Default()

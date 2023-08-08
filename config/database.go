@@ -23,6 +23,12 @@ type DB struct {
 	GormTx *gorm.DB
 }
 
+func CreateDBConnection() {
+	sqlDB = SqlConnection()
+	gormDB = GormConnection(sqlDB)
+	fmt.Println("Connected to database")
+}
+
 func SqlConnection() *sql.DB {
 	dbAddress := fmt.Sprintf("%s:%s", os.Getenv("DB_HOST"), os.Getenv("DB_PORT"))
 	cfg := mysql.Config{
@@ -66,11 +72,6 @@ func GormConnection(sqlDB *sql.DB) *gorm.DB {
 	}
 
 	return gormCon
-}
-
-func CreateDBConnection() {
-	sqlDB = SqlConnection()
-	gormDB = GormConnection(sqlDB)
 }
 
 func GetDBConnection() *DB {
