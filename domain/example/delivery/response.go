@@ -32,3 +32,7 @@ func (r *ExampleResponseImpl) ResponseFindCode(example *entity.Example) *Respons
 func (r *ExampleResponseImpl) ResponseFindByUuid(example *entity.Example) *Response {
 	panic("Not implement")
 }
+
+func NewExampleResponse() ExampleResponse {
+	return &ExampleResponseImpl{}
+}
