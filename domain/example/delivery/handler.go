@@ -1,6 +1,7 @@
 package delivery
 
 import (
+	"github.com/arisatriop/go-auto-reload/domain/example/delivery/api"
 	"github.com/arisatriop/go-auto-reload/domain/example/usecase"
 	"github.com/gin-gonic/gin"
 )
@@ -16,7 +17,9 @@ type ExampleHandler interface {
 }
 
 type ExampleHanlderImpl struct {
-	Usecase usecase.ExampleUsecase
+	Request  api.ExampleRequest
+	Resopnse api.ExampleResponse
+	Usecase  usecase.ExampleUsecase
 }
 
 func (h *ExampleHanlderImpl) Create() gin.HandlerFunc {
@@ -58,5 +61,11 @@ func (h *ExampleHanlderImpl) FindByUuid() gin.HandlerFunc {
 func (h *ExampleHanlderImpl) FindByCode() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		panic("Not implement")
+	}
+}
+
+func NewExampleHandler(request api.ExampleRequest, response api.ExampleResponse, usecase usecase.ExampleUsecase) ExampleHandler {
+	return &ExampleHanlderImpl{
+		Request: *request,
 	}
 }
