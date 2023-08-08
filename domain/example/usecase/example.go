@@ -12,10 +12,8 @@ type ExampleUsecase interface {
 	Create(ctx *gin.Context, request *api.ExampleCreateRequest) *goerr.Error
 	Update(ctx *gin.Context, request *api.ExampleUpdateRequest) *goerr.Error
 	Delete(ctx *gin.Context, id string) *goerr.Error
-	FindById(ctx *gin.Context, id string) (*api.Response, *goerr.Error)
+	Find(ctx *gin.Context) (*api.Response, *goerr.Error)
 	FindAll(ctx *gin.Context, request *api.ExampleReadRequest) ([]api.Response, *goerr.Error)
-	FindByUuid(ctx *gin.Context, uuid string) (*api.Response, *goerr.Error)
-	FindByCode(ctx *gin.Context, code string) (*api.Response, *goerr.Error)
 }
 
 type ExampleUsecaseImpl struct {
@@ -35,19 +33,11 @@ func (u *ExampleUsecaseImpl) Delete(ctx *gin.Context, id string) *goerr.Error {
 	panic("Not implement")
 }
 
-func (u *ExampleUsecaseImpl) FindById(ctx *gin.Context, id string) (*api.Response, *goerr.Error) {
+func (u *ExampleUsecaseImpl) Find(ctx *gin.Context) (*api.Response, *goerr.Error) {
 	panic("Not implement")
 }
 
 func (u *ExampleUsecaseImpl) FindAll(ctx *gin.Context, request *api.ExampleReadRequest) ([]api.Response, *goerr.Error) {
-	panic("Not implement")
-}
-
-func (u *ExampleUsecaseImpl) FindByUuid(ctx *gin.Context, uuid string) (*api.Response, *goerr.Error) {
-	panic("Not implement")
-}
-
-func (u *ExampleUsecaseImpl) FindByCode(ctx *gin.Context, code string) (*api.Response, *goerr.Error) {
 	panic("Not implement")
 }
 
