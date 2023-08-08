@@ -14,6 +14,8 @@ type ExampleUsecase interface {
 	Delete(ctx *gin.Context, id string) *goerr.Error
 	FindById(ctx *gin.Context, id string) (*delivery.Response, *goerr.Error)
 	FindAll(ctx *gin.Context, request *delivery.ExampleReadRequest) ([]delivery.Response, *goerr.Error)
+	FindByUuid(ctx *gin.Context, uuid string) (*delivery.Response, *goerr.Error)
+	FindByCode(ctx *gin.Context, code string) (*delivery.Response, *goerr.Error)
 }
 
 type ExampleUsecaseImpl struct {
@@ -38,6 +40,14 @@ func (u *ExampleUsecaseImpl) FindById(ctx *gin.Context, id string) (*delivery.Re
 }
 
 func (u *ExampleUsecaseImpl) FindAll(ctx *gin.Context, request *delivery.ExampleReadRequest) ([]delivery.Response, *goerr.Error) {
+	panic("Not implement")
+}
+
+func (u *ExampleUsecaseImpl) FindByUuid(ctx *gin.Context, uuid string) (*delivery.Response, *goerr.Error) {
+	panic("Not implement")
+}
+
+func (u *ExampleUsecaseImpl) FindByCode(ctx *gin.Context, code string) (*delivery.Response, *goerr.Error) {
 	panic("Not implement")
 }
 
