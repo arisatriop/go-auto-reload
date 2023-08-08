@@ -14,6 +14,8 @@ type ExampleRepository interface {
 	Delete(ctx *gin.Context, id string) *goerr.Error
 	FindById(ctx *gin.Context, id string) (*entity.Example, *goerr.Error)
 	FindAll(ctx *gin.Context, request *delivery.ExampleReadRequest) ([]entity.Example, *goerr.Error)
+	FindByUuid(ctx *gin.Context, uuid string) (*entity.Example, *goerr.Error)
+	FindByCode(ctx *gin.Context, code string) (*entity.Example, *goerr.Error)
 	Count(ctx *gin.Context, request *delivery.ExampleReadRequest) (int, *goerr.Error)
 }
 
@@ -38,6 +40,14 @@ func (r *ExampleRepositoryImpl) FindById(ctx *gin.Context, id string) (*entity.E
 }
 
 func (r *ExampleRepositoryImpl) FindAll(ctx *gin.Context, request *delivery.ExampleReadRequest) ([]entity.Example, *goerr.Error) {
+	panic("Not implement")
+}
+
+func (r *ExampleRepositoryImpl) FindByUuid(ctx *gin.Context, uuid string) (*entity.Example, *goerr.Error) {
+	panic("Not implement")
+}
+
+func (r *ExampleRepositoryImpl) FindByCode(ctx *gin.Context, code string) (*entity.Example, *goerr.Error) {
 	panic("Not implement")
 }
 
