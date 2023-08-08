@@ -11,7 +11,7 @@ import (
 
 type Route struct{}
 
-func (r *Route) Init(e *gin.Engine, string, validator *validator.Validate, db *config.DB) {
+func (r *Route) Init(e *gin.Engine, validator *validator.Validate, db *config.DB, endpoint string) {
 	request := api.NewExampleRequest()
 	response := api.NewExampleResponse()
 	repository := repository.NewExampleRepository(db)
