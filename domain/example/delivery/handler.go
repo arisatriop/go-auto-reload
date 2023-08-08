@@ -10,10 +10,8 @@ type ExampleHandler interface {
 	Create() gin.HandlerFunc
 	Update() gin.HandlerFunc
 	Delete() gin.HandlerFunc
-	FindById() gin.HandlerFunc
+	Find() gin.HandlerFunc
 	FindAll() gin.HandlerFunc
-	FindByUuid() gin.HandlerFunc
-	FindByCode() gin.HandlerFunc
 }
 
 type ExampleHanlderImpl struct {
@@ -40,7 +38,7 @@ func (h *ExampleHanlderImpl) Delete() gin.HandlerFunc {
 	}
 }
 
-func (h *ExampleHanlderImpl) FindById() gin.HandlerFunc {
+func (h *ExampleHanlderImpl) Find() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		panic("Not implement")
 	}
@@ -52,20 +50,8 @@ func (h *ExampleHanlderImpl) FindAll() gin.HandlerFunc {
 	}
 }
 
-func (h *ExampleHanlderImpl) FindByUuid() gin.HandlerFunc {
-	return func(ctx *gin.Context) {
-		panic("Not implement")
-	}
-}
-
-func (h *ExampleHanlderImpl) FindByCode() gin.HandlerFunc {
-	return func(ctx *gin.Context) {
-		panic("Not implement")
-	}
-}
-
 func NewExampleHandler(request api.ExampleRequest, response api.ExampleResponse, usecase usecase.ExampleUsecase) ExampleHandler {
 	return &ExampleHanlderImpl{
-		Request: *request,
+		Request: request,
 	}
 }
