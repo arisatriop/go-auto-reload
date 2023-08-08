@@ -1,4 +1,4 @@
-package delivery
+package api
 
 import "github.com/arisatriop/go-auto-reload/domain/example/entity"
 

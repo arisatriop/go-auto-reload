@@ -1,4 +1,4 @@
-package handler
+package delivery
 
 import (
 	"github.com/arisatriop/go-auto-reload/domain/example/usecase"
