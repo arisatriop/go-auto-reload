@@ -9,9 +9,9 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
-type RouteExample struct{}
+type Route struct{}
 
-func (r *RouteExample) Init(e *gin.Engine, validator *validator.Validate, db *config.DB, endpoint string) {
+func (r *Route) Init(e *gin.Engine, validator *validator.Validate, db *config.DB, endpoint string) {
 	request := api.NewExampleRequest()
 	response := api.NewExampleResponse()
 	repository := repository.NewExampleRepository(db)
