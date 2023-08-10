@@ -18,7 +18,7 @@ func (r *Route) Init(e *gin.Engine, validator *validator.Validate, db *config.DB
 	usecase := usecase.NewExampleUsecase(validator, repository)
 	handler := NewExampleHandler(request, response, usecase)
 
-	e.POST("api/example", handler.Create())
+	e.POST("api/examples", handler.Create())
 	e.PUT("api/examples/:param", handler.Update())
 	e.DELETE("api/examples/", handler.Delete())
 	e.GET("api/examples/:param", handler.Find())
