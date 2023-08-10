@@ -16,7 +16,7 @@ type ExampleHandler interface {
 
 type ExampleHanlderImpl struct {
 	Request  api.ExampleRequest
-	Resopnse api.ExampleResponse
+	Response api.ExampleResponse
 	Usecase  usecase.ExampleUsecase
 }
 
