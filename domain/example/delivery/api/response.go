@@ -1,6 +1,6 @@
 package api
 
-import "github.com/arisatriop/go-auto-reload/domain/example/entity"
+import "github.com/arisatriop/goilerplate-mono/domain/example/entity"
 
 type Response struct {
 	Code    string `json:"code"`

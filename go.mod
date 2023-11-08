@@ -1,15 +1,15 @@
-module github.com/arisatriop/go-auto-reload
+module github.com/arisatriop/goilerplate-mono
 
 go 1.17
 
 require (
 	github.com/arisatriop/goerr v0.1.0
+	github.com/arisatriop/golog v0.1.1
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-sql-driver/mysql v1.7.1
+	github.com/sirupsen/logrus v1.9.3 // indirect
 	gorm.io/driver/mysql v1.5.1
 	gorm.io/gorm v1.25.2
-	github.com/arisatriop/golog v0.1.1
-	github.com/sirupsen/logrus v1.9.3 // indirect
 )
 
 require (

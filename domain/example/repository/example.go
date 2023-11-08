@@ -1,10 +1,10 @@
 package repository
 
 import (
-	"github.com/arisatriop/go-auto-reload/config"
-	"github.com/arisatriop/go-auto-reload/domain/example/delivery/api"
-	"github.com/arisatriop/go-auto-reload/domain/example/entity"
 	"github.com/arisatriop/goerr"
+	"github.com/arisatriop/goilerplate-mono/config"
+	"github.com/arisatriop/goilerplate-mono/domain/example/delivery/api"
+	"github.com/arisatriop/goilerplate-mono/domain/example/entity"
 	"github.com/gin-gonic/gin"
 )
 

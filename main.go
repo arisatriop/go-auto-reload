@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/arisatriop/go-auto-reload/config"
-	"github.com/arisatriop/go-auto-reload/routes"
+	"github.com/arisatriop/goilerplate-mono/config"
+	"github.com/arisatriop/goilerplate-mono/routes"
 	"github.com/gin-gonic/gin"
 )
 

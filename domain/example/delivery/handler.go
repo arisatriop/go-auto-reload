@@ -1,8 +1,8 @@
 package delivery
 
 import (
-	"github.com/arisatriop/go-auto-reload/domain/example/delivery/api"
-	"github.com/arisatriop/go-auto-reload/domain/example/usecase"
+	"github.com/arisatriop/goilerplate-mono/domain/example/delivery/api"
+	"github.com/arisatriop/goilerplate-mono/domain/example/usecase"
 	"github.com/arisatriop/golog"
 	"github.com/gin-gonic/gin"
 )

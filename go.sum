@@ -1,7 +1,5 @@
 github.com/arisatriop/goerr v0.1.0 h1:33smTHhVqC1GL+eL9fvmFMGmNyKwHmDXddL2AhdWUB0=
 github.com/arisatriop/goerr v0.1.0/go.mod h1:wZs5X6jKAJdGV3Wf4itueeNmKUd9FvgbyzAxYp+9DF0=
-github.com/arisatriop/golog v0.1.0 h1:J7A3JnUNxI9ALSuerKcihKb8/6tbz5drjDQF6NUQPEM=
-github.com/arisatriop/golog v0.1.0/go.mod h1:MWxu59HIgqfX7kFYB6O4SSZzIi4wkZCFTzgha7XXlzU=
 github.com/arisatriop/golog v0.1.1 h1:RHCQmilIhw+9LqfxuT3Ulx3JzfLUuJjdwY3FV1WW9Us=
 github.com/arisatriop/golog v0.1.1/go.mod h1:MWxu59HIgqfX7kFYB6O4SSZzIi4wkZCFTzgha7XXlzU=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=

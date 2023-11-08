@@ -1,9 +1,9 @@
 package usecase
 
 import (
-	"github.com/arisatriop/go-auto-reload/domain/example/delivery/api"
-	"github.com/arisatriop/go-auto-reload/domain/example/repository"
 	"github.com/arisatriop/goerr"
+	"github.com/arisatriop/goilerplate-mono/domain/example/delivery/api"
+	"github.com/arisatriop/goilerplate-mono/domain/example/repository"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 )

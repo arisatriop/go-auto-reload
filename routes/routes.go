@@ -1,11 +1,11 @@
 package routes
 
 import (
-	"github.com/arisatriop/go-auto-reload/config"
+	"github.com/arisatriop/goilerplate-mono/config"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 
-	example "github.com/arisatriop/go-auto-reload/domain/example/delivery"
+	example "github.com/arisatriop/goilerplate-mono/domain/example/delivery"
 )
 
 type RouteGroup struct {

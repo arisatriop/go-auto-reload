@@ -1,11 +1,11 @@
 version: "3.7"
 services:
-  go-auto-reload-local:
+  goilerplate-mono-local:
     build:
       context: .
       dockerfile: local.Dockerfile
-    image: go-auto-reload:local
-    container_name: go-auto-reload-local
+    image: goilerplate-mono:local
+    container_name: goilerplate-mono-local
     ports:
       - 80:80
     environment:
